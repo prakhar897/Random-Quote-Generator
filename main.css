@@ -1,0 +1,39 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+header,section,footer,aside,nav,article,hgroup{
+	display: block;
+}
+
+body{
+	text-align: center;
+}
+
+#container{
+	background-size: cover;
+	background-color: orange;
+}
+
+#heading{
+	color:red;
+	margin-bottom:200px;
+}
+
+#content{
+	background-color: white;
+}
+
+#content > h2{
+	color: green;
+}
+
+#content > h5{
+	color:yellow;
+}
+
+#footer{
+	margin-top: 55vh;
+	color: cyan;
+}
