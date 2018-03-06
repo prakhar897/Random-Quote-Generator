@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -13,27 +16,41 @@ body{
 
 #container{
 	background-size: cover;
-	background-color: orange;
+	background-color: cyan;
 }
 
 #heading{
 	color:red;
+	font-family: 'Indie Flower', cursive;
+}
+
+#heading > h1{
+	width:50%;
+	margin:0 auto;
 	margin-bottom:200px;
+	margin-top: 20px;
 }
 
 #content{
 	background-color: white;
+	margin: 0 auto;
+	width:80%;
+	height:300px;
+	overflow-wrap: break-word;
 }
 
-#content > h2{
-	color: green;
+#content > blockquote{
+	color: hsl(0,0%,17%);
 }
 
-#content > h5{
-	color:yellow;
+#content > cite{
+	color:hsl(0,0%,40%);
+	margin-top: 125px;
+	margin-left: 350px;
+	font-size: 10px;
 }
 
 #footer{
-	margin-top: 55vh;
-	color: cyan;
+	margin-top: 20vh;
+	color: green;
 }
