@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 *{
 	padding: 0px;
 	margin: 0px;
+	/*border: 2px solid red;*/
 }
 
 header,section,footer,aside,nav,article,hgroup{
@@ -15,8 +17,9 @@ body{
 }
 
 #container{
-	background-size: cover;
-	background-color: cyan;
+	background: #B2FEFA;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #heading{
@@ -28,11 +31,10 @@ body{
 	width:50%;
 	margin:0 auto;
 	margin-bottom:200px;
-	margin-top: 20px;
+	margin-top: 2%;
 }
 
 #content{
-	background-color: white;
 	margin: 0 auto;
 	width:80%;
 	height:300px;
@@ -40,17 +42,38 @@ body{
 }
 
 #content > blockquote{
-	color: hsl(0,0%,17%);
+	font-family: 'Patua One', cursive;
+	font-size: 32px;
 }
 
 #content > cite{
-	color:hsl(0,0%,40%);
-	margin-top: 125px;
-	margin-left: 350px;
-	font-size: 10px;
+	font-family: 'Patua One', cursive;
+	font-size: 32px;
+}
+
+.tweet-button{
+	font-size: 30px;
+	margin-top: 5px;
+	margin-right:20px;
+	border-radius:100px;
+	background-color: #f72359;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.new-quote-button{
+	font-size: 30px;
+	margin-top:5px;
+	margin-left: 20px;
+	border-radius:100px;
+	background-color: #f72359;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Permanent Marker', cursive;
 }
 
 #footer{
-	margin-top: 20vh;
+	margin-top: 18vh;
 	color: green;
 }
