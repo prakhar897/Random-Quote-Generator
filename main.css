@@ -41,12 +41,12 @@ body{
 	overflow-wrap: break-word;
 }
 
-#content > blockquote{
+#quote{
 	font-family: 'Patua One', cursive;
 	font-size: 32px;
 }
 
-#content > cite{
+#source{
 	font-family: 'Patua One', cursive;
 	font-size: 32px;
 }
