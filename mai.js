@@ -12,7 +12,7 @@ const quotes = [
 		"source" : "Mark Twain"
 	},
 	{
-		"quote" : "Great minds discuss ideas; average minds discuss events; small minds discuss people", 
+		"quote" : "Great minds discuss ideas, average minds discuss events, small minds discuss people", 
 		"source" : "Eleanor Roosevelt"
 	},
 	{
@@ -28,14 +28,26 @@ const quotes = [
 		"source" : "Rumi"
 	},
 	{
-		"quote" : "When I get a little money I buy books; and if any is left I buy food and clothes", 
+		"quote" : "When I get a little money I buy books, and if any is left I buy food and clothes", 
 		"source" : "Desiderius Erasmus"
 	}
 ]
 
+
+var x;
+
 function newquote()
 {
-	var x = parseInt((Math.random()*10)%(quotes.length));
+	x = parseInt((Math.random()*10)%(quotes.length));
 	document.getElementById("quote").innerHTML = quotes[x].quote;
 	document.getElementById("source").innerHTML = "-"+quotes[x].source;
+}
+
+window.onload = newquote();
+
+function tweetnow()
+{
+	console.log(quotes[x].quote);
+	var url = "https://twitter.com/share?text="+ quotes[x].quote+ " - " + quotes[x].source +".         Check out :- https://codepen.io/Prakhar897/pen/MVjXeK";
+	window.open(url);
 }
